@@ -1,0 +1,52 @@
+{
+  "name": "@const-code/medusa-notification-postmark",
+  "version": "1.0.1",
+  "description": "A Postmark notification provider for Medusa v2. Supports custom HTML and Postmark's hosted templates.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "test": "jest"
+  },
+  "keywords": [
+    "medusa",
+    "medusa-plugin",
+    "medusa-v2",
+    "notification",
+    "postmark",
+    "email",
+    "notification-provider"
+  ],
+  "author": "const-code",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/const-code/medusa-notification-postmark.git"
+  },
+  "bugs": {
+    "url": "https://github.com/const-code/medusa-notification-postmark/issues"
+  },
+  "homepage": "https://github.com/const-code/medusa-notification-postmark#readme",
+  "peerDependencies": {
+    "@medusajs/framework": "^2.0.0",
+    "postmark": "^4.0.0"
+  },
+  "devDependencies": {
+    "@medusajs/framework": "^2.13.1",
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.19.33",
+    "jest": "^29.0.0",
+    "postmark": "^4.0.5",
+    "typescript": "^5.9.3"
+  },
+  "directories": {
+    "example": "examples"
+  }
+}
